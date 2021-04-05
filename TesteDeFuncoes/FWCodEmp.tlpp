@@ -1,0 +1,24 @@
+#include "totvs.ch"
+//=====================================================================================
+// FWCodEmp - PJ Oliveira - Maio 2019
+//-------------------------------------------------------------------------------------
+//Descrição
+// executando as funcoes FWCodEmp e FWCompanyName
+//-------------------------------------------------------------------------------------
+//Parametros
+// nil
+//-------------------------------------------------------------------------------------
+//Retorno
+// nil
+//=====================================================================================
+
+User Function FWCodEmp()
+    
+    Local lRet        := nil 
+    Local cCodEmp     := FWCodEmp()
+    Local cNameEmp    := FWEmpName(cCodEmp)
+ 
+    MsgInfo( 'FWCodEmp - FWEmpName : ' + cCodEmp + " - " + cNameEmp, 'ADVPL' )
+
+ 
+Return( lRet )
